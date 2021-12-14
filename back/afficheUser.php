@@ -1,7 +1,6 @@
 <?php
-header('Content-type: application/json');
-header('Access-Control-Allow-Origin: *');
 
+header('Content-type: application/json');
 require './config.php';
 
 $users = $pdo->query('SELECT * FROM users ');
@@ -17,12 +16,5 @@ $user = $users->fetchAll();
         $i++;
      }
     
-     $response2 = array();
-     $response2[0] = array(
-         'id' => '1',
-         'value1'=> 'value1',
-         'value2'=> 'value2'
-     );
-
 echo json_encode($response); 
 ?>

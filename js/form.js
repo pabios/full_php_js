@@ -6,25 +6,9 @@ let mdp = document.querySelector('#mdp')
 
 const api = '/back/form.php';
 
-/**
- * permet de bloquer le bouton envoi 
- * tant que le code est invalide
- */
+ 
 
- disableSubmit  = (disabled)=>{
-    if(disabled){
-        envoyer.setAttribute('disabled',true)
-    }else{
-        envoyer.removeAttribute('disabled')
-    }
-}
-
-/**
- *  Exiger un minimun de  4 caractere pour le pseudo
- */
- isValid = (nom) => {
-    return /^nom-[a-z]{4,}/.test(nom);
-}
+ 
 
 
 /**
