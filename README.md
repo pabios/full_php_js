@@ -4,7 +4,7 @@
 
 ### Details 
 * Au lieu de bricoller comme ca pour que ca marche 
-````
+```
 if(res.ok){
             return res.text()
         }
