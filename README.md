@@ -9,8 +9,8 @@ if(res.ok){
             return res.text()
         }
 ```
-* il doit pouvoir faire ceci 
-````
+ Je dois pouvoir faire ceci 
+```
 if(res.ok){
             return res.json()
         }
