@@ -1,6 +1,6 @@
 # j'ai eu soucis dans la realisation exact du cahier chages.
 
-## Alors quand j'envoit a php du res.text() cela marche Mais quand je convertit bien mes donnees en json et que je les envoie . cela ne marche plus 
+#### Alors quand j'envois a php du res.text() cela marche Mais quand je converti   mes donnees en json et que je les envoie . cela ne marche plus 
 
 ### Details 
 * Au lieu de bricoller comme ca pour que ca marche 
