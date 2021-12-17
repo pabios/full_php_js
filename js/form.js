@@ -6,11 +6,6 @@ let mdp = document.querySelector('#mdp')
 
 const api = '/back/form.php';
 
- 
-
- 
-
-
 /**
  *  la fonction callback envoyer a l'evenement submit
  */
@@ -37,7 +32,6 @@ baldeApi = (e) => {
 
 leForm.addEventListener('submit',baldeApi,false)
 
-
 /**
  * fetch api 
  * method -> get 
@@ -45,9 +39,11 @@ leForm.addEventListener('submit',baldeApi,false)
  */
 
 let lien = document.querySelector('#apiGet')
-
+let resultat = document.querySelector('.resultat')
+let ligne = document.querySelector('.ligne')
 ismaApi = (e) => {
     e.preventDefault();
+
      let apiGet = '/back/afficheUser.php'
 
     fetch(apiGet)
@@ -58,11 +54,25 @@ ismaApi = (e) => {
     })
     .then(data =>{
         console.log(data)
+            data.forEach(elm => {
+                resultat.innerHTML += `
+                    <tr>
+                        <td> 
+                            ${elm.id}
+                        </td>
+                        <td> 
+                            ${elm.nom}
+                        </td>
+                        <td> 
+                        ${elm.ville}
+                    </td>
+                </ul> 
+             `             
+            });
     })
     .catch(e => {
         console.log('erreur de lecture'+e);
     })
 }
 
-
- lien.addEventListener('click',ismaApi,false)
+    lien.addEventListener('click',ismaApi,false)

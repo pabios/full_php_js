@@ -20,7 +20,15 @@
     </div>
     <div class="get__item">
         <h1> Api get  php js</h1>
-        <a href="#" id="apiGet">api get</a>
+        <a href="#" id="apiGet">Voir les users</a>
+        <h3> Au click  le  Tableau s'affiche</h3>
+        <table border="1" class="resultat">
+             <tr>
+                 <th>id</th>
+                 <th>nom</th>
+                 <td>ville</th>
+             </tr>
+        </table>
     </div>
     </div>
 

@@ -1,9 +1,8 @@
 <?php
-
-header('Content-type: application/json');
 require './config.php';
+header('Content-type: application/json');
 
-$users = $pdo->query('SELECT * FROM users ');
+$users = $pdo->query('SELECT * FROM users');
 $user = $users->fetchAll();
 
     $response = array();
@@ -12,9 +11,10 @@ $user = $users->fetchAll();
         $response[$i] = array(
             'id' => $u['id'],
             'nom'=> $u['nom'],
+            'ville'=> $u['ville'],
         );
         $i++;
-     }
-    
-echo json_encode($response); 
+     }    
+    //var_dump($response);
+    echo json_encode($response);  
 ?>
