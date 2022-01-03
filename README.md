@@ -32,6 +32,6 @@ echo json_encode($response);
 ````
 ici on prepare php  pour que nos donnees renvoyer soit du json . 
 ##### Mais comment doit-je dire a PHP de se preparer a recevoir du json . (c'est cette question que je me pose actuellement) 
+### laisse moi un astuce
 
-### Tu pourais me données des pistes la dessus  ?
-# merci
+ 
