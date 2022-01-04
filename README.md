@@ -1,4 +1,4 @@
-# j'ai eu soucis dans la realisation exact du cahier chages.
+# Recuperer les donnees d'un Formulaire en Js et les enregistrer dans la bdd avec du PHP
 
 #### Alors quand j'envois a php du res.text() cela marche Mais quand je converti   mes donnees en json et que je les envoie . cela ne marche plus 
 
@@ -9,7 +9,7 @@ if(res.ok){
             return res.text()
         }
 ```
- Je dois pouvoir faire ceci 
+ J'aimerais bien pouvoir faire ceci 
 ```
 if(res.ok){
             return res.json()
@@ -32,6 +32,6 @@ echo json_encode($response);
 ````
 ici on prepare php  pour que nos donnees renvoyer soit du json . 
 ##### Mais comment doit-je dire a PHP de se preparer a recevoir du json . (c'est cette question que je me pose actuellement) 
-### laisse moi un astuce
+### laisse moi un astuce ou reviens plustard voir ma solution version res.json() au lieu de res.text()
 
  
